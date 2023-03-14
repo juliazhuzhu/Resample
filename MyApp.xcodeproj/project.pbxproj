@@ -15,16 +15,20 @@
 		9869AAEA29B17D2B002BC30D /* MyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869AAE929B17D2B002BC30D /* MyAppUITests.swift */; };
 		9869AAEC29B17D2B002BC30D /* MyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869AAEB29B17D2B002BC30D /* MyAppUITestsLaunchTests.swift */; };
 		987A53D429B1970000225005 /* testc.c in Sources */ = {isa = PBXBuildFile; fileRef = 987A53D329B1970000225005 /* testc.c */; };
-		987A53D829B1993500225005 /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53D629B1980D00225005 /* libavutil.dylib */; };
-		987A53DB29B19B9400225005 /* libavutil.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53D629B1980D00225005 /* libavutil.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		987A53DF29B19BE900225005 /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53DD29B19BE800225005 /* libavformat.dylib */; };
-		987A53E029B19BE900225005 /* libavformat.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53DD29B19BE800225005 /* libavformat.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		987A53E129B19BE900225005 /* libavdevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53DE29B19BE800225005 /* libavdevice.dylib */; };
-		987A53E229B19BE900225005 /* libavdevice.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53DE29B19BE800225005 /* libavdevice.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		987A53E529B9D7DC00225005 /* libswscale.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53E429B9D7DB00225005 /* libswscale.dylib */; };
-		987A53E629B9D7DC00225005 /* libswscale.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53E429B9D7DB00225005 /* libswscale.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		987A53E829B9D8F100225005 /* libswresample.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53E729B9D8F100225005 /* libswresample.dylib */; };
-		987A53E929B9D8F100225005 /* libswresample.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53E729B9D8F100225005 /* libswresample.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		987A53ED29BB33F700225005 /* libswscale.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53E429B9D7DB00225005 /* libswscale.dylib */; };
+		987A53EE29BB33F700225005 /* libswscale.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53E429B9D7DB00225005 /* libswscale.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		987A53EF29BB33F700225005 /* libswresample.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53E729B9D8F100225005 /* libswresample.dylib */; };
+		987A53F029BB33F700225005 /* libswresample.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53E729B9D8F100225005 /* libswresample.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		987A53F129BB33F700225005 /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53D629B1980D00225005 /* libavutil.dylib */; };
+		987A53F229BB33F700225005 /* libavutil.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53D629B1980D00225005 /* libavutil.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		987A53F329BB33F700225005 /* libavdevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53DE29B19BE800225005 /* libavdevice.dylib */; };
+		987A53F429BB33F700225005 /* libavdevice.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53DE29B19BE800225005 /* libavdevice.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		987A53F529BB33F700225005 /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53EA29BB238900225005 /* libavcodec.dylib */; };
+		987A53F629BB33F700225005 /* libavcodec.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53EA29BB238900225005 /* libavcodec.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		987A53F729BB33F700225005 /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53DD29B19BE800225005 /* libavformat.dylib */; };
+		987A53F829BB33F700225005 /* libavformat.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53DD29B19BE800225005 /* libavformat.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		987A53FB29BB33FA00225005 /* libfdk-aac.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 987A53FA29BB33F900225005 /* libfdk-aac.dylib */; };
+		987A53FC29BB33FA00225005 /* libfdk-aac.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 987A53FA29BB33F900225005 /* libfdk-aac.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -59,17 +63,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		987A53DC29B19B9400225005 /* Embed Libraries */ = {
+		987A53F929BB33F800225005 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				987A53E029B19BE900225005 /* libavformat.dylib in Embed Libraries */,
-				987A53DB29B19B9400225005 /* libavutil.dylib in Embed Libraries */,
-				987A53E929B9D8F100225005 /* libswresample.dylib in Embed Libraries */,
-				987A53E229B19BE900225005 /* libavdevice.dylib in Embed Libraries */,
-				987A53E629B9D7DC00225005 /* libswscale.dylib in Embed Libraries */,
+				987A53EE29BB33F700225005 /* libswscale.dylib in Embed Libraries */,
+				987A53FC29BB33FA00225005 /* libfdk-aac.dylib in Embed Libraries */,
+				987A53F629BB33F700225005 /* libavcodec.dylib in Embed Libraries */,
+				987A53F429BB33F700225005 /* libavdevice.dylib in Embed Libraries */,
+				987A53F229BB33F700225005 /* libavutil.dylib in Embed Libraries */,
+				987A53F829BB33F700225005 /* libavformat.dylib in Embed Libraries */,
+				987A53F029BB33F700225005 /* libswresample.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +102,8 @@
 		987A53DE29B19BE800225005 /* libavdevice.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.dylib; path = MyApp/libs/libavdevice.dylib; sourceTree = "<group>"; };
 		987A53E429B9D7DB00225005 /* libswscale.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.dylib; path = MyApp/libs/libswscale.dylib; sourceTree = "<group>"; };
 		987A53E729B9D8F100225005 /* libswresample.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswresample.dylib; path = MyApp/libs/libswresample.dylib; sourceTree = "<group>"; };
+		987A53EA29BB238900225005 /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = MyApp/libs/libavcodec.dylib; sourceTree = "<group>"; };
+		987A53FA29BB33F900225005 /* libfdk-aac.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libfdk-aac.dylib"; path = "MyApp/libs/libfdk-aac.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +111,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				987A53DF29B19BE900225005 /* libavformat.dylib in Frameworks */,
-				987A53D829B1993500225005 /* libavutil.dylib in Frameworks */,
-				987A53E829B9D8F100225005 /* libswresample.dylib in Frameworks */,
-				987A53E129B19BE900225005 /* libavdevice.dylib in Frameworks */,
-				987A53E529B9D7DC00225005 /* libswscale.dylib in Frameworks */,
+				987A53ED29BB33F700225005 /* libswscale.dylib in Frameworks */,
+				987A53FB29BB33FA00225005 /* libfdk-aac.dylib in Frameworks */,
+				987A53F529BB33F700225005 /* libavcodec.dylib in Frameworks */,
+				987A53F329BB33F700225005 /* libavdevice.dylib in Frameworks */,
+				987A53F129BB33F700225005 /* libavutil.dylib in Frameworks */,
+				987A53F729BB33F700225005 /* libavformat.dylib in Frameworks */,
+				987A53EF29BB33F700225005 /* libswresample.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +194,8 @@
 		987A53D529B1980D00225005 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				987A53FA29BB33F900225005 /* libfdk-aac.dylib */,
+				987A53EA29BB238900225005 /* libavcodec.dylib */,
 				987A53E729B9D8F100225005 /* libswresample.dylib */,
 				987A53E429B9D7DB00225005 /* libswscale.dylib */,
 				987A53DE29B19BE800225005 /* libavdevice.dylib */,
@@ -203,7 +215,7 @@
 				9869AAC629B17D28002BC30D /* Sources */,
 				9869AAC729B17D28002BC30D /* Frameworks */,
 				9869AAC829B17D28002BC30D /* Resources */,
-				987A53DC29B19B9400225005 /* Embed Libraries */,
+				987A53F929BB33F800225005 /* Embed Libraries */,
 			);
 			buildRules = (
 				987A53E329B1A53200225005 /* PBXBuildRule */,
