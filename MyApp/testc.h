@@ -11,4 +11,7 @@
 #include <stdio.h>
 void record_audio(void);
 void stop_record(void);
+
+void record_video(void);
+
 #endif /* testc_h */

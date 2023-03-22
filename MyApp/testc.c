@@ -324,3 +324,55 @@ void record_audio(void ) {
     fclose(out_file);
     return;
 }
+
+void record_video(void){
+    
+    printf("v \n");
+    int ret = 0;
+    char averr[1024]={0};
+    rec_status = 1;
+    //ctx var
+    AVFormatContext *av_format_ctx = NULL;
+    //0 - carama
+    //1 - 桌面
+    char* device_name = "0";
+    AVDictionary* opt = NULL;
+    AVInputFormat* iFormat = NULL;
+    
+    
+    int count = 0;
+    AVPacket packet;
+    avdevice_register_all();
+    iFormat = av_find_input_format("avfoundation");
+    av_dict_set(&opt, "video_size","640x480",0);
+    av_dict_set(&opt, "framerate","30",0);
+    av_dict_set(&opt, "pixel_format","nv12",0);
+    
+    if ((ret = avformat_open_input( &av_format_ctx, device_name, iFormat, &opt)) < 0){
+        
+        av_strerror(ret, averr, sizeof(averr));
+        printf("failed to open device %s\n", averr);
+        return;
+    }
+    FILE *out_file = fopen("/Users/xiaoye/Downloads/video.yuv", "wb+");
+    av_init_packet(&packet);
+    while(((ret = av_read_frame(av_format_ctx, &packet)) == 0 || ret == -35)
+          && rec_status){
+        if(ret == -35){
+            usleep(100);
+            continue;
+        }
+        //614400 for uyvy422
+        //460800 for nv12
+        av_log(NULL, AV_LOG_INFO,"packet size %d\n", packet.size);
+        fwrite(packet.data, 1, 460800,  out_file);
+        fflush(out_file);
+        av_packet_unref(&packet);
+    }
+    
+    if (out_file)
+        fclose(out_file);
+    if (av_format_ctx)
+        avformat_close_input(&av_format_ctx);
+    
+}
