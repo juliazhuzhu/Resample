@@ -30,7 +30,7 @@ class ViewController: NSViewController {
         recordStatus = !recordStatus
         if recordStatus == true {
             self.bt.title = "停止录制"
-            thread = Thread.init(target: self, selector: #selector(self.recAudio), object: nil)
+            thread = Thread.init(target: self, selector: #selector(self.recVideo), object: nil)
             thread?.start()
         }else {
             self.bt.title = "开始录制"
@@ -43,6 +43,11 @@ class ViewController: NSViewController {
     @objc
     func recAudio() {
         record_audio();
+    }
+    
+    @objc
+    func recVideo() {
+        record_video();
     }
     override var representedObject: Any? {
         didSet {
